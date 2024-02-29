@@ -6,6 +6,9 @@
   --color-banner: #2522ba;
   --color-text-btn: #0d6efd;
   --color-bg-btn: #ffdc60;
+  --color-subtitle: #c75c6f;
+  --color-title: #292930;
+  --color-bg-services: #f8f8f8;
 }
 /* General Styles */
 html {
@@ -370,4 +373,128 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+
+/* services */
+
+.layout__services {
+  position: relative;
+  z-index: 1;
+  margin: 5rem 4rem;
+}
+
+.services__grid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.services__header {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.services__subtitle {
+  color: var(--color-subtitle);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.services__title {
+  color: var(--color-title);
+  font-size: 6.7rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.services__service {
+  width: 33%;
+  height: 100%;
+  padding: 5rem 4rem;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(180deg, #f8f8f8, #ffffff);
+  background-color: var(--color-secondary);
+  border: 1px solid;
+  border-image-source: linear-gradient(90deg, #f8f8f8, rgba(255, 255, 255, 0));
+  transition: all 300ms ease-in-out;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.services__service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 45px 80px -50px var(--color-primary);
+  background-color: var(--color-bg-services);
+}
+
+.service__container-img {
+  margin-right: 2.5rem;
+  max-width: 8.5rem;
+}
+
+.service__content {
+  flex: 1;
+}
+
+.service__title {
+  color: var(--color-title);
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  pointer-events: none;
+}
+
+.service__description {
+  font-size: 1.7rem;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.service__more {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.7rem;
+  position: relative;
+  padding-left: 5rem;
+  transition: all 300ms ease-in-out;
+}
+
+.service__more::before {
+  content: "";
+  width: 3.4rem;
+  height: 1.5px;
+  background-color: var(--color-text-body);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transition: all 300ms ease-in-out;
+}
+
+.service__more:hover,
+.service__title:hover {
+  color: var(--color-primary);
+}
+
+.service__more:hover::before {
+  background-color: var(--color-primary);
+}
+
+.services__service--bottom {
+  margin-top: 20rem;
+}
+.services__service--middle {
+  margin-top: 10rem;
+}
+.services__service--top {
+  margin-top: 0;
 }
