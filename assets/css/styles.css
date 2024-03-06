@@ -11,6 +11,7 @@
   --color-bg-services: #f8f8f8;
   --color-bg-projects: #ecf2f6;
   --color-bg-dark: #27272e;
+  --color-hover-dark: #303035;
   --color--text-description: #99a1aa;
 }
 /* General Styles */
@@ -690,6 +691,51 @@ body {
 .stats__description {
   color: var(--color--text-description);
   font-size: 1.7rem;
-  width: 40%;
+  width: 45%;
   margin: 0 auto;
+}
+.stats__progress {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-top: 6rem;
+}
+
+.stats__stat {
+  width: 25%;
+  text-align: center;
+  padding: 5rem 2rem;
+  border-radius: 3rem;
+}
+.stats__stat:hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-bg-dark),
+    var(--color-hover-dark)
+  );
+  border: 1px solid var(--color-hover-dark);
+}
+.stat__icon > img {
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.stat__count {
+  display: inline-block;
+  color: var(--color-primary);
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+.stat__title {
+  text-align: center;
+  color: var(--color-secondary);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: capitalize;
 }
