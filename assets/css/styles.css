@@ -13,6 +13,7 @@
   --color-bg-dark: #27272e;
   --color-hover-dark: #303035;
   --color--text-description: #99a1aa;
+  --color--bg-shadow: ##fab8c4;
 }
 /* General Styles */
 html {
@@ -738,4 +739,112 @@ body {
   font-weight: 400;
   line-height: 1.2;
   text-transform: capitalize;
+}
+
+/* reviews */
+
+.layout__reviews {
+  position: relative;
+  z-index: 1;
+  padding: 14rem 10rem;
+}
+.reviews__grid {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.reviews__header {
+  text-align: left;
+  margin-bottom: 6rem;
+}
+.reviews__subtitle {
+  color: var(--color-subtitle);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}
+.reviews__title {
+  color: var(--color-title);
+  font-size: 6.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+.reviews__description {
+  margin-top: 3rem;
+  width: 50%;
+  font-size: 2rem;
+}
+.reviews__container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-top: 10rem;
+}
+.reviews__review {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  border: 2px solid var(--color-bg-services);
+  border-radius: 2rem;
+}
+.review__company {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.review__description {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  color: var(--color-bg-dark);
+  margin-bottom: 3rem;
+}
+.review__author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.author__container-img {
+  border-radius: 3.5rem;
+  overflow: hidden;
+}
+.author__content {
+  flex: 1;
+}
+.author__name {
+  display: block;
+  font-weight: 700;
+  color: var(--color-bg-dark);
+  margin-bottom: 0.3rem;
+}
+.author__position {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--color--text-description);
+}
+.review-shapes__item {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  top: 162px;
+  right: 48%;
+}
+.review-shapes--shape3 {
+  animation: reviewShape3 24s infinite;
+}
+
+@keyframes reviewShape3 {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  40% {
+    transform: translateX(400px) translateY(-50px);
+  }
+  75% {
+    transform: translateX(280px) translateY(600px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
 }
