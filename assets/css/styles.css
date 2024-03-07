@@ -46,7 +46,7 @@ body {
   padding-left: 4.5rem;
   padding-top: 3rem;
   padding-right: 4.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 
 .menu__navbar {
@@ -74,6 +74,7 @@ body {
 
 .nav__title {
   position: relative;
+  font-size: 1.6rem;
   display: inline-block;
   line-height: 6rem;
   font-weight: 500;
@@ -593,7 +594,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 4rem 6rem;
+  gap: 4rem 4rem;
 }
 
 .project__container-img {
@@ -607,6 +608,10 @@ body {
   height: 100%;
   object-fit: cover;
   transition: all 900ms ease-in-out;
+}
+
+.projects__project {
+  width: calc(50% - 3.5rem);
 }
 
 .projects__project:hover .project__img {
@@ -875,7 +880,7 @@ body {
   font-weight: 500;
   line-height: 1.2;
   margin-bottom: 3rem;
-  width: 40%;
+  width: 45%;
 }
 .clients__description {
   color: var(--color--text-description);
@@ -1039,8 +1044,8 @@ body {
   z-index: 1;
   overflow: hidden;
   padding: 0;
-  padding-top: 14rem;
-  padding-bottom: 10rem;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
 }
 .layout__contact::before {
   content: "";
@@ -1282,6 +1287,7 @@ body {
 }
 .fleft__subtitle {
   font-size: 1.7rem;
+  margin-bottom: 2rem;
 }
 .fleft__group {
   position: relative;
