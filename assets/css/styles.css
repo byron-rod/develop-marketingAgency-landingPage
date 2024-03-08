@@ -464,7 +464,7 @@ body {
 }
 
 .service__description {
-  font-size: 1.7rem;
+  font-size: 2rem;
   overflow: hidden;
   margin-bottom: 4rem;
 }
@@ -472,7 +472,7 @@ body {
 .service__more {
   display: inline-block;
   font-weight: 500;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   position: relative;
   padding-left: 5rem;
   transition: all 300ms ease-in-out;
@@ -570,11 +570,11 @@ body {
   margin-bottom: 5.5rem;
   display: flex;
   flex-direction: row;
-  gap: 4.5rem;
+  gap: 5.5rem;
 }
 
 .categories__item {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--color-text-body);
   text-transform: capitalize;

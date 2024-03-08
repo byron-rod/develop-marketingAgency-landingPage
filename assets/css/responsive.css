@@ -142,6 +142,14 @@
     font-size: 1.5rem;
     width: 50%;
   }
+  .contact__thumb--mobile {
+    position: absolute;
+    bottom: 0;
+    right: 0rem;
+  }
+  .contact__img {
+    width: 88%;
+  }
   .fleft__subtitle {
     font-size: 1.5rem;
   }
@@ -162,9 +170,29 @@
   .navbar__nav {
     display: none;
   }
+  .projects__all {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4rem 4rem;
+  }
+  .projects__project {
+    width: calc(90% - 4rem);
+    margin: 0 auto;
+  }
+  .project__tags {
+    font-size: 1.7rem;
+  }
   .reviews__container {
     flex-direction: column;
   }
+  .reviews__review {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+  }
+
   .layout__clients {
     padding: 6rem 9rem;
   }
@@ -188,8 +216,25 @@
   .layout__news {
     padding: 6rem 5rem;
   }
+  .news__description {
+    color: var(--color--text-description);
+    text-align: center;
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .new__description {
+    color: var(--color--text-description);
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
   .new-shapes--shape4 {
     display: none;
+  }
+  .contact__thumb--laptop {
+    bottom: 0;
+    left: 2rem;
   }
   .footer__main {
     display: flex;
@@ -214,5 +259,76 @@
   .widget__link {
     font-size: 1.7rem;
     padding: 0.8rem 0.2rem;
+  }
+  .footer__bottom {
+    flex-direction: column;
+  }
+  .footer__copyright {
+    flex-basis: auto;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .footer__links {
+    flex-basis: auto;
+    text-align: center;
+  }
+  .footer__flinks {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .layout__banner {
+    margin: 0 3rem;
+    padding: 8rem 3rem;
+    min-height: 50rem;
+  }
+  .banner__title {
+    font-size: 4rem;
+  }
+  .banner__btn {
+    padding: 1.5rem 2.5rem;
+    font-size: 1.5rem;
+  }
+  .layout__services {
+    position: relative;
+    z-index: 1;
+    margin: 7rem 9rem;
+    margin-bottom: 7.5rem;
+  }
+  .stats__progress {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+  }
+  .stats__stat {
+    width: calc(50% - 4rem);
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 3rem;
+  }
+  .stats__description {
+    font-size: 1.7rem;
+    width: 80%;
+  }
+  .news__new {
+    flex-direction: column;
+  }
+  .new__container-img {
+    width: 62%;
+  }
+  .new__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .new__container-img {
+    width: 72%;
+  }
+  .new__img {
+    width: 100%;
   }
 }
