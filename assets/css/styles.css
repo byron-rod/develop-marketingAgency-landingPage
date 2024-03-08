@@ -56,6 +56,18 @@ body {
   align-items: center;
 }
 
+.menu__navbar--fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  background-color: var(--color-secondary);
+  box-shadow: 0px 2px 18px 0 rgba(0, 0, 0, 10%);
+  padding: 1.5rem 4rem;
+  transition: all 100ms linear;
+}
+
 .navbar__logo {
   width: 187px;
 }
@@ -1413,10 +1425,11 @@ body {
 
 /* responsive navbar */
 .navbar__mobile-btn {
-  display: block;
+  display: none;
 }
 .mobile-btn__wrap {
   display: flex;
+  cursor: pointer;
   background-color: var(--color-primary);
   height: 5rem;
   width: 5rem;
@@ -1438,5 +1451,95 @@ body {
 }
 
 .menu-mobile {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: -300px;
+  top: 0;
+  z-index: 10;
+  width: 30rem;
+  height: 100%;
+  background-color: var(--color-secondary);
+
+  padding: 5rem 1rem;
+  padding-top: 0;
+  box-shadow: 11px 23px 85px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.menu-mobile--show {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+}
+
+.menu-mobile__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 1rem;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid var(--color-borders);
+}
+
+.menu-mobile__container-logo {
+  width: 15rem;
+}
+.menu-mobile__link-logo {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu-mobile__close {
+  background-color: transparent;
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid var(--color-borders);
+  border-radius: 1rem;
+  color: var(--color--text-body);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.menu-mobile__list {
+  display: block;
+  height: 100%;
+  overflow: auto;
+}
+.menu-mobile__item {
+  position: relative;
+  border-bottom: 1px solid var(--color-borders);
+  margin: 0 1rem;
+}
+.menu-mobile__title {
+  position: relative;
+  height: 5rem;
+  line-height: 5rem;
+  color: var(--color-text-body);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-mobile__icon {
+  font-size: 1.4rem;
+}
+.menu-mobile__submenu-mobile {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+
+  min-width: 100%;
+  padding: 0;
+  padding-bottom: 1rem;
+}
+
+.submenu-mobile__link {
   display: none;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-text-body);
 }

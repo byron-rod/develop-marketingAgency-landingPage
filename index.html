@@ -11,14 +11,27 @@
       rel="stylesheet"
       href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css"
     />
+    <script src="assets/js/menu-mobile.js"></script>
+    <script src="assets/js/navbar-fixed.js"></script>
 
     <title>Digital Marketing Agency</title>
   </head>
   <body>
+    <!-- dark mode button -->
+    <div class="switcher">
+      <button class="switcher__btn">
+        <span class="switcher__icon-light">
+          <i class="fa-solid fa-moon switcher__icon"></i>
+        </span>
+        <span class="switcher__icon-dark">
+          <i class="fa-solid fa-sun switcher__icon"></i>
+        </span>
+      </button>
+    </div>
     <!-- Nav Menu -->
     <div class="menu-mobile">
       <header class="menu-mobile__header">
-        <div class="menu-mobile__logo">
+        <div class="menu-mobile__container-logo">
           <a class="menu-mobile__link-logo" href="#">
             <img class="menu-mobile__logo" src="./assets/img/logo1.png" alt="company logo" />
           </a>
@@ -31,9 +44,9 @@
       <div class="menu-mobile__body">
         <nav class="menu-mobile__nav">
           <ul class="menu-mobile__list">
-            <li class="menu-mobile__item">
+            <!-- <li class="menu-mobile__item">
               <a href="#" class="menu-mobile__link">Home</a>
-            </li>
+            </li> -->
             <li class="menu-mobile__item">
               <a href="#" class="menu-mobile__title"
                 >Services

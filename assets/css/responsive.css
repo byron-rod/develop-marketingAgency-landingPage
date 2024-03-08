@@ -89,6 +89,9 @@
   .navbar__nav {
     display: none;
   }
+  .navbar__mobile-btn {
+    display: block;
+  }
   .banner__title {
     font-size: 4.5rem;
   }
