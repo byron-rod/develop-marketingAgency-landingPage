@@ -81,3 +81,12 @@
 .project__link-title:hover {
   color: var(--color-primary);
 }
+.menu-mobile__title {
+  color: var(--color-banner);
+}
+.submenu-mobile__link {
+  color: var(--color-banner);
+}
+.menu-mobile__icon-close {
+  color: var(--color-banner);
+}
