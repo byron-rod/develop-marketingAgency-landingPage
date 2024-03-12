@@ -418,7 +418,66 @@
 }
 
 @media (max-width: 400px) {
-  .layout {
-    min-width: auto;
+  .services__service {
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 3rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .service-shapes--shape2 {
+    right: 1%;
+    top: 22rem;
+  }
+  .project-shapes--shape2 {
+    top: 10%;
+    left: 40%;
+  }
+  .layout__stats {
+    background-color: var(--color-bg-dark);
+    padding: 7rem 4rem;
+  }
+  .layout__clients {
+    padding: 5rem 3rem;
+  }
+  .fleft__group {
+    flex-direction: row;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .fleft__mail-icon {
+    display: none;
+  }
+
+  .fleft__form-control {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  .fleft__btn {
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+  }
+  .projects__project {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .stats__title {
+    font-size: 4rem;
+    width: 100%;
+  }
+  .stats__stat {
+    width: 100%;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 3rem;
+  }
+  .clients__item--secundary {
+    display: none;
+  }
+  .clients__item {
+    width: 100%;
+    padding: 3rem 2rem;
   }
 }
