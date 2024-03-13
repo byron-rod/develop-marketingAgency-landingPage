@@ -417,7 +417,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .services__title {
     font-size: 3.5rem;
   }
